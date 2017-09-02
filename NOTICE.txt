@@ -1,14 +1,14 @@
 mimic-dict
 Copyright 2017 James Moon
 
-The code herein is a port to JavaScript of the solution for the "Mimic pyquick
+The file `mimic-dict.js` is a port to JavaScript of the solution for the "Mimic pyquick
 exercise" - an optional extra exercise part of Google's Python Class at:
-https://github.com/mlafeldt/google-python-class
+http://code.google.com/edu/languages/google-python-class/
 
-The `mimic.py` solution is located at:
+The `mimic.py` exercise solution is located at:
 https://github.com/mlafeldt/google-python-class/blob/master/basic/solution/mimic.py
 
-Attribution notice for the original Python source code:
+The Python class's exercise files/source code are thus attributed:
 
 Code for Google's Python Class
 Copyright 2010 Google Inc.
