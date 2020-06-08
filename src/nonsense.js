@@ -1,13 +1,9 @@
 // `mimic-dict.js` is a port/derivative of a Google Python learning exercise.
 // See the included NOTICE text file for details and attribution.
 
-const fs = require('fs')
-const path = require('path')
-
 // Returns mimicDict mapping each word to list of words that follow it
-function mimicDict (filename) {
+function createMimicryDict (text) {
   let mimicDict = {}
-  let text = fs.readFileSync(path.join(__dirname, filename)).toString()
   let words = text.trim().split(/\s+/)
   let prev = ''
   words.forEach(word => {
@@ -29,17 +25,23 @@ function getRandomInt (min, max) {
   return Math.floor(Math.random() * (max - min)) + min
 }
 
-// Given a mimicDict word mapping and start word, return a given
-// number of (or 200) words that randomly follow the mapping
-function printMimic (mimicDict, word, numWords) {
-  numWords = numWords || 200
-  let output = word || ''
+/**
+ * Wax nonsense with a dictionary based on a given text.
+ *
+ * @param {string} text
+ * @param {string} word - optional start word
+ * @param {integer} numWords - default 200
+ */
+function utterNonsense (text, word = '', numWords = 200) {
+  const mimicry = createMimicryDict(text)
+  let output = word
   for (let i = 0; i < numWords; i++) {
-    let nexts = mimicDict[word] || mimicDict['']
+    let nexts = mimicry[word] || mimicry['']
     word = nexts[getRandomInt(0, nexts.length)]
     output += ' ' + word
   }
   return output
 }
 
-console.log(printMimic(mimicDict('alice.txt')))
+module.exports = { utterNonsense }
+

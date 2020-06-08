@@ -1,21 +1,27 @@
 {
   "name": "nonsense-lit",
   "version": "0.0.1",
-  "description": "Produce lorem-ipsum-esque filler text by mimicking the words of a given source",
-  "main": "nonsense-lit.js",
+  "description": "Produce lorem-ipsum-esque mimicry nonsense based on a given source text",
+  "main": "src/nonsense.js",
   "scripts": {
+    "demo": "node -p \"const {join}=require('path');const {utterNonsense}=require('./src/nonsense');console.log(utterNonsense(require('fs').readFileSync(join(__dirname,'alice.txt')).toString()))\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": ["lorem", "ipsum", "mimicry"],
+  "keywords": [
+    "lorem",
+    "ipsum",
+    "mimicry",
+    "nonsense"
+  ],
   "author": "James Moon <mooniker@gmail.com>",
   "license": "Apache-2.0",
   "devDependencies": {
-    "eslint-config-standard": "^10.2.1",
-    "eslint-plugin-import": "^2.7.0",
-    "eslint-plugin-node": "^5.1.1",
-    "eslint-plugin-promise": "^3.5.0",
-    "eslint-plugin-standard": "^3.0.1",
-    "prettier-standard": "^6.0.0"
+    "eslint-config-standard": "^14.1.1",
+    "eslint-plugin-import": "^2.21.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "prettier-standard": "^16.3.0"
   },
   "dependencies": {},
   "repository": {
@@ -25,5 +31,8 @@
   "bugs": {
     "url": "https://github.com/mooniker/nonsense-lit/issues"
   },
-  "homepage": "https://github.com/mooniker/nonsense-lit#readme"
+  "homepage": "https://github.com/mooniker/nonsense-lit#readme",
+  "eslintConfig": {
+    "extends": "standard"
+  }
 }

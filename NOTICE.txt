@@ -1,7 +1,7 @@
-mimic-dict
-Copyright 2017 James Moon
+nonsense-lit(.js)
+Copyright 2017-2020 James Moon
 
-The file `mimic-dict.js` is a port to JavaScript of the solution for the "Mimic pyquick
+This module was originally a port to JavaScript of the solution for the "Mimic pyquick
 exercise" - an optional extra exercise part of Google's Python Class at:
 http://code.google.com/edu/languages/google-python-class/
 
