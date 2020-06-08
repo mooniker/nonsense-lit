@@ -1,6 +1,6 @@
 {
   "name": "nonsense-lit",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Produce lorem-ipsum-esque mimicry nonsense based on a given source text",
   "main": "src/nonsense.js",
   "scripts": {
