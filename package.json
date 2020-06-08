@@ -1,12 +1,12 @@
 {
-  "name": "mimic-dict",
+  "name": "nonsense-lit",
   "version": "0.0.1",
   "description": "Produce lorem-ipsum-esque filler text by mimicking the words of a given source",
-  "main": "mimic-dict.js",
+  "main": "nonsense-lit.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
+  "keywords": ["lorem", "ipsum", "mimicry"],
   "author": "James Moon <mooniker@gmail.com>",
   "license": "Apache-2.0",
   "devDependencies": {
@@ -20,10 +20,10 @@
   "dependencies": {},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mooniker/mimic-dict.git"
+    "url": "git+https://github.com/mooniker/nonsense-lit.git"
   },
   "bugs": {
-    "url": "https://github.com/mooniker/mimic-dict/issues"
+    "url": "https://github.com/mooniker/nonsense-lit/issues"
   },
-  "homepage": "https://github.com/mooniker/mimic-dict#readme"
+  "homepage": "https://github.com/mooniker/nonsense-lit#readme"
 }
